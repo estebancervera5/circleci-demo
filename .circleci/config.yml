@@ -30,8 +30,8 @@ workflows:
       - test:
           requires:
             - build
-      - deployment:
-          filters:
+    deployment:
+         filters:
             branches:
               only:
                 -master
