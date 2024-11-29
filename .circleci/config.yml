@@ -30,7 +30,7 @@ workflows:
       - test:
           requires:
             - build
-      - deployment
+      - deployment:
           filters:
             branches:
               only:
